@@ -1,0 +1,45 @@
+body {
+    background-color: #111111;
+    opacity: 0.9;
+    color:azure;
+    font-family: 'Courier New', Courier, monospace;
+    background: radial-gradient(circle, transparent 20%, #050505 20%, #050505 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #050505 20%, #050505 80%, transparent 80%, transparent) 45px 45px, linear-gradient(#171717 3.6px, transparent 3.6px) 0 -1.8px, linear-gradient(90deg, #171717 3.6px, #050505 3.6px) -1.8px 0;
+    background-size: 90px 90px, 90px 90px, 45px 45px, 45px 45px;
+}
+.logo {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.fileupload {
+    text-align: center;
+    margin-top: 5%;
+}
+.fileupload input[name=file]{
+    width: 20%;
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.fileupload input[type=submit] {
+    background-color: red;
+    color: white;
+    padding:10px 5px;
+    border: none;
+    cursor: pointer;
+    width: 6%;
+}
+
+.desc {
+    text-align: center;
+    margin: 2% 30% 2%;
+    border: 5px solid white;
+
+}
+.pic {
+    text-align: center;
+}
+
+.map {
+    text-align: center;
+}

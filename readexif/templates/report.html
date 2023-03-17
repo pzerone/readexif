@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="pic">
+    <img src="{{ url_for('send_file', filename=filename) }}" alt="Uploaded photo" width="20%" height="auto">
+</div>
+<div class="desc">
+    <h4>Model name: {{ attributes.model }}</h4>
+    <h4>Date and Time: {{ attributes.datetime }}</h4>
+    <h4>Latitude: {{ attributes.latitude }}</h4>
+    <h4>Longitude: {{ attributes.longitude }}</h4>
+    <h4>Make: {{ attributes.make }}</h4>
+</div>
+
+<div class="map">
+    {% if not attributes.latitude == "Unknown" %}
+    <iframe width="800" height="250" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q={{ attributes.latitude }},{{ attributes.longitude }}&key=AIzaSyBeK9IjQHGSX9aeS4n4UJJ88Hbzqw3jmbM"></iframe>
+    {% endif %}
+</div>
+{% endblock content %}

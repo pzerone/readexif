@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="logo">
+  <img src="../static/assets/file.jpg" alt="Logo" width="200" height="200">
+</div>
+<div class="fileupload">
+    <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Upload>
+      </form>
+</div>
+{% endblock content %}
